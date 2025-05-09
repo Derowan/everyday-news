@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Notizie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notizie del Giorno</h1>
+        <div id="filters">
+            <label for="category">Categoria:</label>
+            <select id="category" name="category">
+                <option value="technology">Tecnologia</option>
+                <option value="business">Economia</option>
+                <option value="sports">Sport</option>
+                <option value="entertainment">Intrattenimento</option>
+                <option value="health">Salute</option>
+            </select>
+            <button onclick="getNews()">Carica Notizie</button>
+        </div>
+    </header>
+    <section id="news-container">
+        <!-- Le notizie verranno caricate qui -->
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
